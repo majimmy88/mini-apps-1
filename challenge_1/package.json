@@ -1,0 +1,30 @@
+{
+  "name": "challenge_1",
+  "version": "1.0.0",
+  "description": "Tic-Tac-Toe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.js",
+    "react-dev": "webpack -d --watch"
+  },
+  "author": "Jimmy Ma",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.15.0",
+    "jquery": "^3.4.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.19.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
