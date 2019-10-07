@@ -43,7 +43,7 @@ class App extends React.Component {
     })
     .then((res)=>{
       console.log(res)
-      this.setState({ step: (step+1)%3 })
+      // this.setState({ step: (this.state.step+1)%3 })
     })
     .catch((err)=>{
       console.log(err)
@@ -61,7 +61,7 @@ class App extends React.Component {
     e.preventDefault();
     var step = this.state.step
     if(step === 2){
-      sendData()
+      this.sendData()
     }else{
       this.setState({ step: (step+1)%3 })
     }

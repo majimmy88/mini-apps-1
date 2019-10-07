@@ -22576,8 +22576,6 @@ var App = function (_React$Component) {
   }, {
     key: 'sendData',
     value: function sendData() {
-      var _this2 = this;
-
       _axios2.default.post('/checkoutInfo', {
         name: this.state.name,
         email: this.state.email,
@@ -22593,7 +22591,7 @@ var App = function (_React$Component) {
         billingZipCode: this.state.billingZipCode
       }).then(function (res) {
         console.log(res);
-        _this2.setState({ step: (step + 1) % 3 });
+        // this.setState({ step: (this.state.step+1)%3 })
       }).catch(function (err) {
         console.log(err);
       });
@@ -22612,7 +22610,7 @@ var App = function (_React$Component) {
       e.preventDefault();
       var step = this.state.step;
       if (step === 2) {
-        sendData();
+        this.sendData();
       } else {
         this.setState({ step: (step + 1) % 3 });
       }
